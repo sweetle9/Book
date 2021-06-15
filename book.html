@@ -17,6 +17,29 @@
   $('.header_menu').click(function(){
      $('.header_burger, .header_menu').removeClass('active');
   });
+
+  let position = 0;
+  const slidesToShow = 2;
+  const slidesToScroll = 1;
+  const container = $('.slider_container');
+  const track = $('.slider_track');
+  const item = $('.slider_item');
+  const btnPrev = $('.btn_prev');
+  const btnNext = $('.btn_next');
+  const itemsCount = item.length;
+  const itemWidth = container.width() / slidesToShow;
+  const movePosition = slidesToScroll * itemWidth;
+
+  item.each(function(index, item) {
+    $(item).css({
+      minWidth: itemWidth,
+    });
+  });
+
+  btnNext.click(function() {
+    console.log("btn-next");
+  });
+
   });
   </script>
   </head>
