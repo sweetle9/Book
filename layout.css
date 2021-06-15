@@ -250,7 +250,8 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-    margin-top: 13vw;
+    margin-top: 11vw;
+    margin-left: 10.5vw;
     text-align: center;
     width: 67.262vw;
     background-color: white;
@@ -290,7 +291,14 @@
     font-size: 1.786vw;
   }
   .slider_buttons {
-    top:3vw;
+    position: absolute;
+    top:22vw;
+  }
+  .btn-prev {
+    margin-right:15vw;
+  }
+  .btn-next {
+    margin-left:45vw;
   }
   p {
     font-family: 'Montserrat', sans-serif; font-size: 1.429vw; font-weight: normal; vertical-align: top; text-align: left; line-height: 1.7vw;
