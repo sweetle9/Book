@@ -247,17 +247,21 @@
     padding-left: 2vw;
   }
   .slider_container {
-    display: block;
+    display: inline-block;
+    position: relative;
     overflow: hidden;
     margin-top: 11vw;
+    width: 33.631vw;
     background-color: white;
   }
   .slider_track {
     display: flex;
     background-color: pink;
+    transition: .2s;
   }
   .slider_item {
     height: 47.619vw;
+    min-width: 33.631vw;
   }
   .slider_buttons {
     text-align: center;
@@ -268,6 +272,17 @@
     font-size: 5.357vw;
     text-decoration: none;
     background: none;
+  }
+  .text_book {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+  }
+  .text_book p {
+    width: 41.369vw;
+    height: 15.476vw;
+    margin-top: 2vw;
+    font-size: 1.786vw;
   }
   p {
     font-family: 'Montserrat', sans-serif; font-size: 1.429vw; font-weight: normal; vertical-align: top; text-align: left; line-height: 1.7vw;
