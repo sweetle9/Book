@@ -250,9 +250,12 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-    margin-top: 11vw;
-    width: 33.631vw;
+    margin-top: 13vw;
+    text-align: center;
+    width: 67.262vw;
     background-color: white;
+    outline: 1vw solid rgba(8, 157, 148, 1);
+    outline-offset: 0vw;
   }
   .slider_track {
     display: flex;
@@ -285,6 +288,9 @@
     height: 15.476vw;
     margin-top: 2vw;
     font-size: 1.786vw;
+  }
+  .slider_buttons {
+    top:3vw;
   }
   p {
     font-family: 'Montserrat', sans-serif; font-size: 1.429vw; font-weight: normal; vertical-align: top; text-align: left; line-height: 1.7vw;
