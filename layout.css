@@ -246,6 +246,29 @@
     height: 80%;
     padding-left: 2vw;
   }
+  .slider_container {
+    display: block;
+    overflow: hidden;
+    margin-top: 11vw;
+    background-color: white;
+  }
+  .slider_track {
+    display: flex;
+    background-color: pink;
+  }
+  .slider_item {
+    height: 47.619vw;
+  }
+  .slider_buttons {
+    text-align: center;
+  }
+  .btn-prev, .btn-next {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 5.357vw;
+    text-decoration: none;
+    background: none;
+  }
   p {
     font-family: 'Montserrat', sans-serif; font-size: 1.429vw; font-weight: normal; vertical-align: top; text-align: left; line-height: 1.7vw;
   }
