@@ -277,6 +277,8 @@
     display: inline-block;
     width: 30%;
     position: relative;
+    margin-left: 13vw;
+    top: -28vw;
   }
   .text_book p {
     width: 41.369vw;
