@@ -254,6 +254,7 @@
     margin-left: 10.5vw;
     text-align: center;
     width: 67.262vw;
+    height: 100%;
     background-color: white;
     outline: 1vw solid rgba(8, 157, 148, 1);
     outline-offset: 0vw;
@@ -262,10 +263,12 @@
     display: flex;
     background-color: pink;
     transition: .2s;
+    height: 100%;
+    width: 100%;
   }
   .slider_item {
-    height: 47.619vw;
-    min-width: 33.631vw;
+    height:100%;
+    min-width: 100%;
   }
   .btn-prev, .btn-next {
     position: relative;
