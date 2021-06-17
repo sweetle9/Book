@@ -17,56 +17,6 @@
   $('.header_menu').click(function(){
      $('.header_burger, .header_menu').removeClass('active');
   });
-
-  let position = 0;
-  const slidesToShow = 2;
-  const slidesToScroll = 1;
-  const container = $('.slider_container');
-  const track = $('.slider_track');
-  const item = $('.slider_item');
-  const btnPrev = $('.btn-prev');
-  const btnNext = $('.btn-next');
-  const itemsCount = item.length;
-  const itemWidth = container.width() / slidesToShow;
-  const movePosition = slidesToScroll * itemWidth;
-
-  item.each(function(index, item) {
-    $(item).css({
-      minWidth: itemWidth - 35,
-    });
-  });
-
-  btnNext.click(function() {
-    const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-    position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
-
-    setPosition();
-    checkBtns();
-  });
-
-  btnPrev.click(function() {
-    const itemsLeft = Math.abs(position) / itemWidth;
-    position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
-
-    setPosition();
-    checkBtns();
-  });
-
-  const setPosition = () => {
-    track.css({
-      transform: `translateX(${position}vw)`
-    });
-  };
-
-  const checkBtns = () => {
-    btnPrev.prop('disabled', position === 0);
-    btnNext.prop(
-      'disabled',
-      position <= -(itemsCount - slidesToShow) * itemWidth
-    );
-  };
-
-  checkBtns();
   });
   </script>
   </head>
