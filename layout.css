@@ -246,31 +246,95 @@
     height: 80%;
     padding-left: 2vw;
   }
+  .square {
+    position: absolute;
+    top:0;
+    left: 8vw;
+    text-align: center;
+    width: 72vw;
+    height: 100vw;
+    z-index: -1;
+    background-color: rgba(8, 157, 148, 1);
+  }
   .slider_container {
     display: inline-block;
     position: relative;
-    overflow: hidden;
     margin-top: 11vw;
-    margin-left: 10.5vw;
     text-align: center;
-    width: 67.262vw;
-    height: 100%;
-    background-color: white;
-    outline: 1vw solid rgba(8, 157, 148, 1);
-    outline-offset: 0vw;
-  }
-  .slider_track {
-    display: flex;
-    background-color: pink;
-    transition: .2s;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    /* background-color: white; */
+  }
+  .slick-slider {
+
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-slide {
+
+  }
+  .slick-slide.slick-active {
+
+  }
+  .slick-slide.slick-current {
+
+  }
+  .slick-slide.slick-center {
+
+  }
+  .slick-arrow {
+
+  }
+  .slick-arrow.slick-prev {
+
+  }
+  .slick-arrow.slick-next {
+
+  }
+  .slick-arrow.slick-disabled {
+
+  }
+  .slick-dots {
+
+  }
+  .slick-dots li {
+
+  }
+  .slick-dots li.slick-active {
+
+  }
+  .slick-dots li button {
+
+  }
+  .slider {
+    position: relative;
+    padding: 2vw 10vw;
+  }
+  .slider .slick-arrow {
+    position: absolute;
+    top:50%;
+    z-index: 2;
+    font-size: 0;
+    width: 6vw;
+    height: 6vw;
+  }
+  .slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('images/arrow-prev.svg') 0 0 /100% no-repeat;
+  }
+  .slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('images/arrow-next.svg') 0 0 /100% no-repeat;
   }
   .slider_item {
-    height:100%;
-    min-width: 100%;
+
   }
-  .btn-prev, .btn-next {
+
+  /* .btn-prev, .btn-next {
     position: relative;
     font-family: "Montserrat";
     font-weight: bold;
@@ -303,7 +367,7 @@
   }
   .btn-next {
     left:75vw;
-  }
+  } */
   p {
     font-family: 'Montserrat', sans-serif; font-size: 1.429vw; font-weight: normal; vertical-align: top; text-align: left; line-height: 1.7vw;
   }
