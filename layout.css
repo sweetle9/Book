@@ -248,11 +248,11 @@
   }
   .square {
     position: absolute;
-    top:0;
+    top:0vw;
     left: 8vw;
     text-align: center;
     width: 72vw;
-    height: 100vw;
+    height: 52vw;
     z-index: -1;
     background-color: rgba(8, 157, 148, 1);
   }
