@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script scr="js/slick.min.js"></script>
-  <style media="screen">
+    <script src="js/slick.min.js"></script>
+    <style media="screen">
 
-  </style>
+    </style>
   <script type="text/javascript">
     $(document).ready(function() {
     $(".header_burger").click(function() {
@@ -18,7 +18,9 @@
   $('.header_menu').click(function(){
      $('.header_burger, .header_menu').removeClass('active');
   });
-    $(".slider_track").slick();
+    $(".slider").slick({
+    
+    });
   });
   </script>
   </head>
@@ -88,7 +90,8 @@
     </header>
     <div class="content">
     <div class="slider_container">
-      <div class='slider_track'>
+      <div class="square"></div>
+      <div class='slider'>
         <div class="slider_item"><img src="images/Book-01.jpg" alt=""></div>
         <div class="slider_item"><img src="images/Book-02.jpg" alt=""></div>
         <div class="slider_item"><img src="images/Book-03.jpg" alt=""></div>
@@ -135,10 +138,10 @@
         <div class="slider_item"><img src="images/Book-44.jpg" alt=""></div>
       </div>
     </div>
-    <div class="slider_buttons">
+    <!-- <div class="slider_buttons">
       <button class="btn-prev" name="button"><</button>
       <button class="btn-next" name="button">></button>
-    </div>
+    </div> -->
     <!-- <div class="text_book">
       <h1>КНИГА</h1>
       <p>Журнал о ресторане «Кручина Арлекина» был издан после того, как проект в форме слезы был уже подготовлен. В журнале можно прочитать и увидеть насколько уникален и многообразен ресторан. <br> А также понять, чего стоит ожидать <br> приходя погрустить. </p>
